@@ -1,0 +1,9 @@
+.paper-list li {
+  display: block !important;
+  list-style-type: circle !important;
+  height: fit-content;
+}
+.paper-img {
+  height: auto;
+  width: 100%;
+}

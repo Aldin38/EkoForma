@@ -1,0 +1,128 @@
+.navbar {
+  background-color: #0066b3 !important;
+  color: green;
+  padding: 0px 0px 15px 0px;
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  border-radius: 0px 0px 30% 30%;
+}
+
+.navbar-brand img {
+  margin-left: 100px;
+  height: 80px !important;
+  width: auto;
+  outline: none !important;
+  transition: transform ease-out 0.2s;
+}
+.navbar-brand img:hover {
+  transform: rotate(-20deg) scale(0.95);
+}
+.list {
+  padding: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex: 2;
+  font-family: "Oswald";
+  justify-content: center;
+}
+li {
+  display: inline-block !important;
+  height: 30px;
+}
+.drop-btn {
+  background-color: transparent;
+  white-space: nowrap;
+  width: 100px;
+  border: none;
+  color: white;
+  font-size: 23px;
+  width: fit-content;
+  font-weight: bolder;
+}
+
+.right-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0%;
+  top: 20px;
+  background-color: #fff;
+  min-width: 150px;
+  z-index: 1000;
+}
+.dropdown-menu a {
+  color: black !important;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.dropdown-menu a:hover {
+  background-color: #0066b3;
+
+  color: white;
+}
+.right-menu:hover .dropdown-menu {
+  display: block;
+}
+li a {
+  margin: none !important;
+  text-decoration: none !important;
+  color: #fff;
+  display: inline-block !important;
+  text-align: center;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  margin: 0px 10px;
+}
+.list-link {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px 20px;
+}
+.list-link:hover {
+  color: white !important;
+}
+
+.list-link::after {
+  content: "" !important;
+  display: block !important;
+  width: 0 !important;
+  height: 2px !important;
+  box-sizing: content-box;
+  background-color: #fff !important;
+  transition: width 0.3s !important;
+}
+
+.list-link:hover:after {
+  width: 100% !important;
+  transition: width 0.3s !important;
+}
+
+@media only screen and (max-width: 1030px) {
+  li a,
+  .drop-btn {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .list a,
+  .right-menu {
+    display: none !important;
+  }
+  .navbar {
+    border-radius: 0px;
+  }
+  .navbar-brand {
+    margin-left: -70px;
+  }
+}

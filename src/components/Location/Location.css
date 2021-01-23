@@ -1,0 +1,56 @@
+.google-map-parent {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 25px !important;
+  height: fit-content !important;
+}
+.google-map-wrapper {
+  display: flex !important;
+  flex: 1 !important;
+  min-width: 50%;
+  flex-wrap: wrap;
+  height: fit-content !important;
+}
+.eko-bug-addresa {
+  flex: 1 !important;
+  position: relative;
+  flex-wrap: wrap;
+
+  min-width: 60%;
+  display: flex !important;
+}
+.location-btn {
+  background-color: #0066b3;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid gray;
+}
+.location-btn:hover,
+.location-btn:active {
+  background-color: #0066a0;
+}
+@media only screen and (max-width: 800px) {
+  .google-map-container {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 600px !important;
+  }
+  .google-map-wrapper {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .google-map-parent {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 25px !important;
+  }
+  .google-map-wrapper {
+    display: flex !important;
+    flex: 1 !important;
+    min-width: 50%;
+    flex-wrap: wrap;
+    height: 100% !important;
+  }
+}

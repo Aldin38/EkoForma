@@ -1,0 +1,9 @@
+.plastics-list li {
+  list-style-type: circle !important;
+  display: block !important;
+}
+
+.plastic-img {
+  height: auto !important;
+  width: 100%;
+}

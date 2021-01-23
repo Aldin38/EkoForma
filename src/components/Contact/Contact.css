@@ -1,0 +1,14 @@
+.fb-img {
+  height: 45px;
+  width: auto;
+  margin-right: 8px !important;
+}
+.ig-img {
+  height: 40px;
+  width: auto;
+}
+@media only screen and (max-width: 720px) {
+  .contact-wrapper {
+    font-size: 11px;
+  }
+}
