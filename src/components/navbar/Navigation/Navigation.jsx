@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './Navigation.css';
 import '../SideDrawer/DrawerToggleButton';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Navbar, Container, NavDropdown, Nav, Dropdown } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
 import logo  from '../../../static/ekoFormaW.png'
 
@@ -20,9 +19,9 @@ import logo  from '../../../static/ekoFormaW.png'
       <button className="list-link drop-btn" href="#">MATERIJALI</button>
 
         <div className="dropdown-menu">
-        <Link to="plastika">Plastika</Link>
-        <Link to="papir">Papir</Link>
-        <Link to="staklo">Staklo</Link>
+        <Link to="/plastika">Plastika</Link>
+        <Link to="/papir">Papir</Link>
+        <Link to="/staklo">Staklo</Link>
         </div>
       </li>
         <li>
